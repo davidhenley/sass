@@ -7,6 +7,10 @@
 body {
   font-family: $text-font;
   color: $text-color;
+
+  @media only screen and (max-width: 960px) {
+    font-size: 125%;
+  }
 }
 
 @include fancy-links;
@@ -60,6 +64,10 @@ a {
 
 #main {
   width: $content-width;
+  @media only screen and (max-width: 960px) {
+    width: auto;
+    max-width: $content-width;
+  }
   margin-left: auto;
   margin-right: auto;
 
